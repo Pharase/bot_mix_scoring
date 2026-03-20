@@ -21,7 +21,7 @@ export async function runWordwallBot(): Promise<void> {
 
   // ---------- Fill name ----------
   await page.getByRole('textbox', { name: 'Name...' }).click();
-  await page.getByRole('textbox', { name: 'Name...' }).fill('White Tesla LOVER');
+  await page.getByRole('textbox', { name: 'Name...' }).fill('User');
   await page.getByRole('checkbox', { name: 'Remember me?' }).uncheck();
   await page.getByRole('button', { name: 'Start' }).click();
 
